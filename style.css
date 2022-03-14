@@ -1,0 +1,252 @@
+/* font-family: 'Inter', sans-serif;
+font-family: 'Merriweather', serif; */
+
+
+
+/* ****base start**** */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;   
+    background-color: black;
+    color: white;
+    font-family: 'Merriweather', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+}
+
+
+html {
+    scroll-behavior: smooth; 
+}
+
+.container{
+    max-width: 1920px;
+    /* width: 1440px; */
+    margin: 0 auto;
+    /* padding: 0 20px; */
+}
+
+/* ****base end**** */
+
+
+/* Hover start */
+
+.logo:hover {
+    filter: invert(2%) sepia(70%) saturate(900%) hue-rotate(30deg) brightness(80%) contrast(85%);
+    transition: 0.3s;
+}
+
+.audio-button:hover {
+    filter: invert(2%) sepia(70%) saturate(900%) hue-rotate(30deg) brightness(80%) contrast(85%);
+    transition: 0.3s;
+}
+
+.footer-link:hover {
+    filter: invert(2%) sepia(70%) saturate(900%) hue-rotate(30deg) brightness(80%) contrast(85%);
+    transition: 0.3s;
+}
+
+.nav-link:hover {
+    filter: invert(2%) sepia(70%) saturate(900%) hue-rotate(30deg) brightness(80%) contrast(85%);
+    transition: 0.3s;
+}
+
+
+/* Hover end */
+
+/* Header start */
+
+.header-container{
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-start;
+    height: 60px;
+    padding-top: 15px;
+}
+
+
+.logo{
+    background-image: url('assets/icon/logo.svg');
+    background-size: contain;
+    background-repeat: no-repeat;  
+    transition: 0.3s;
+    height: 50px;
+    width: 50px;
+}
+
+
+.nav{
+    margin-left: auto;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+}
+
+.nav-link {
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-active{
+    filter: invert(2%) sepia(70%) saturate(900%) hue-rotate(30deg) brightness(80%) contrast(85%);
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    margin-right: 30px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+
+.hamburger{
+    margin-left: 20px;
+}
+
+.line{
+    width: 50px;
+    height: 3px;
+    background-color: #ecf0f1;
+    display: none;
+    margin: 8px auto;
+}
+
+
+/* Header end */
+
+
+
+/* main start */
+
+.main-background{
+    background-image: url('assets/1.jpg');
+    background-position: center ;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: auto;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+/* main end */
+
+
+
+/* footer start */
+
+
+.footer-col{
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.footer-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 50px;
+}
+
+.left-col-item{
+    font-family: 'Inter';
+    font-size: 20px;
+    line-height: 50px;
+    padding-right: 15px;
+}
+
+.left-col{
+    padding-right: 20px;
+}
+
+.center-col{
+    background-image:url(assets/icon/rss.svg);
+    background-size: contain;
+    background-repeat: no-repeat;  
+    transition: 0.3s;
+    width: 76px;
+    padding-right: 40px;
+}
+
+
+.footer-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    margin-top: 0px;
+    margin-left: 30px;
+}
+
+
+/* footer end */
+
+
+/* audio btn start */
+
+.audio-button{
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+.play {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url(assets/icon/play.svg);
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    transition: 0.4s;
+
+}
+
+
+.pause {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-image: url(assets/icon/pause.svg);
+    height: 70px;
+    width: 70px;
+    margin: 0 auto;
+    transition: 0.4s;
+
+}
+
+/* audio btn end */
+
+@media (max-width: 768px){
+
+    .nav-list {
+        flex-direction: column;
+    }
+}
